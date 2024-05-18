@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo manual 001 GEN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="app.js" defer></script>
+    <style>
+        /* Custom scrollbar styles */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: rgba(255, 255, 255, 0.5); /* Color del "palito" */
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: rgba(255, 255, 255, 0.7); /* Color del "palito" al pasar el ratón */
+        }
+    </style>
+</head>
+<body class="bg-gray-800 h-screen w-screen flex flex-col">
+    <header class="w-full py-3 fixed top-0 left-0 z-10 bg-slate-800">
+        <h1 class="text-white text-center underline">Demo </h1>
+        <h1 class="text-white text-4xl font-bold text-center">
+            Manual 001 GEN
+        </h1>
+    </header>
+
+    <section class="w-full flex-grow  text-white overflow-y-auto">
+        <div id="chat-history" class="space-y-4 max-w-4xl mx-auto pt-28 flex flex-col gap-4">
+            <!-- Chat history will be appended here -->
+        </div>
+    </section>
+
+    <section class="w-full pb-8 mt-auto mb-0">
+        <div class="max-w-4xl mx-auto">
+            <form class="text-center flex gap-2">
+                <input type="text" id="message" placeholder="Enter prompt" class="bg-gray-100 border-2 w-full p-4 rounded-lg my-auto" />
+                <button type="submit" id="message-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl uppercase my-auto">
+                    Enviar
+                </button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
