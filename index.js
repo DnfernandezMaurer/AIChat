@@ -1,4 +1,4 @@
-import express from "express";
+import express from "/.express";
 import bodyParser from "body-parser";
 import * as dotevn from "dotenv";
 dotevn.config();
